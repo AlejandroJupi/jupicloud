@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/carbon','PruebaextController@pruebacarbon');
+Route::get('/excelp','PruebaextController@pruebaexcel');
