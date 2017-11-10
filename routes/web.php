@@ -20,6 +20,12 @@ Route::get('/carbon','PruebaextController@pruebacarbon');
 Route::get('/excelp','PruebaextController@pruebaexcel');
 Route::get('/pdfp','PruebaextController@pruebapdf');
 
-Auth::routes();
+Route::get('/image', 'PruebaextController@pruebaimage');
+Route::post('uploadimage', 'PruebaextController@uploadimage');
 
+Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+
